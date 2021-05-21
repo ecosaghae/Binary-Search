@@ -1,11 +1,3 @@
-"""
-Hey guys, welcome back. Today I will be showing you how the binary search algorithm works.
-Binary search is very useful because of the speed
-Binary search algorithm is to look through an already sorts list and determine whether an item is in that list
-in this example, we are looking for the number 9 in this list.
-8 is the midpoint. If the number is that we are looking for is higher then we choose to only look through the
-items to the right of the midpoint. If it's lower, then we chose the items to the left.
-"""
 # [2, 4, 5, 7, 8, 9, 13, 17, 21]
 
 # first, we will def binary search, which takes 2 arguments. we will give it some list called l and the item we are
@@ -45,27 +37,3 @@ def binary(l, item):
 list_a = [2, 4, 5, 7, 8, 9, 13, 17, 21]
 item = int(input('Enter a number from [2, 4, 5, 7, 8, 9, 13, 17, 21]: '))
 print(binary(list_a, item))
-
-'''
-
-length == 1000
-sorted_list = set()
-
-while len(sorted_list) < length:
-    sorted_list.add(random.randint(-3 * length, 3 * length))
-sorted_list = sorted(list(sorted_list))
-
-target_list = [random.randint(-3 * length, 3 * length) for _ in range(length)]
-
-start = time.time()
-end = time.time()
-print("naive time is:", (end - start), 'seconds')
-start = time.time()
-end = time.time()
-print("Binary search time is:", (end - start), 'seconds')
-
-item = int(input('Enter a number from [2, 4, 5, 7, 8, 9, 13, 17, 21]: '))
-
-I hope you guys have learned something new about basic computer science. We can search how much more 
-effeictive binary search is
-'''
